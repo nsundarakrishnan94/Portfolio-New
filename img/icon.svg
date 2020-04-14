@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91" height="91" viewBox="0 0 91 91">
+  <g id="Group_2" data-name="Group 2" transform="translate(-207 -377)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="45.5" cy="45.5" r="45.5" transform="translate(207 377)" fill="#fff"/>
+    <path id="Icon_awesome-pen" data-name="Icon awesome-pen" d="M3.907,1.242l1.721,1.7-3.736,3.7L.357,6.817A.321.321,0,0,1,0,6.464L.172,4.943l3.735-3.7ZM6.692.988l-.808-.8a.65.65,0,0,0-.913,0l-.76.753,1.721,1.7.76-.753a.635.635,0,0,0,0-.9Z" transform="translate(248.533 451.139)"/>
+    <g id="Icon_feather-code" data-name="Icon feather-code" transform="translate(296 477.92)">
+      <path id="Path_3" data-name="Path 3" d="M24,18.1l4.549-4.549L24,9" transform="translate(-63.255 -37.191)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_4" data-name="Path 4" d="M7.549,9,3,13.549,7.549,18.1" transform="translate(-57 -37.191)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(-4.625 -8.654)">
+      <path id="Path_5" data-name="Path 5" d="M2555.964,350.337c1.918-5.593,2.473-7.623,2.473-7.623l-15.445-10.489-8.323-5.327-4.353,19.975,25.647,10.936-1.375,9.926-26.876,10.484,2.6-18.361" transform="translate(-2286 68.757)" fill="none" stroke="#000" stroke-width="10"/>
+      <path id="Path_6" data-name="Path 6" d="M2179.625,602.758l35.79-14.484,6.092,10.816-26.571,16.2Z" transform="translate(-1943 -148)" fill="rgba(0,0,0,0.04)"/>
+    </g>
+  </g>
+</svg>

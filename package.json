@@ -1,0 +1,19 @@
+{
+  "name": "new_portfolio",
+  "version": "1.0.0",
+  "description": "Sundara Krishnan Portfolio",
+  "main": "index.js",
+  "scripts": {
+     "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "sundara",
+    "krishnan",
+    "portfolio"
+  ],
+  "author": "sundara krishnan",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
