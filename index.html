@@ -97,7 +97,7 @@
 
     <section class="skills_wrapper_container">
         <h2 class="skills__heading">SKILLS</h2>
-        <div class="line-2"></div>
+        <div class="line-3"></div>
         <div class="skills_container">
            
            
@@ -202,7 +202,7 @@
 
 <section class="recent_works_wrapper">
     <h2 class="recent_work_heading">RECENT WORKS</h2>
-    <div class="line-2"></div>
+    <div class="line-4"></div>
     <h4 class="recent_heading">Check out other recent works here</h4>
     <div class="recent_work_container">
        
@@ -231,7 +231,7 @@
 
     <footer class="footer_wrapper">
         <h2 class="contact_heading">CONTACT</h2>
-        <div class="line-2"></div>
+        <div class="line-5"></div>
         <h3 class="Catchme">CATCH ME BELOW</h3>
     <div class="all_icon_container">
         <div class="icon_container-contact"><a href="https://www.instagram.com/sundara_krishnan/" class="instagram_hyper" target="_blank" ><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a></div>
@@ -262,13 +262,105 @@
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 
     <script>
         gsap.from('header', {opacity:0, duration:1, y:-50, ease: 'Power2.easeInOut'})
                 
     </script>
 
+<script>
+    var tl= new TimelineMax({onUpdate:updatePercentage});
+    var tl2= new TimelineMax({onUpdate:updatePercentage});
+    var tl3= new TimelineMax({onUpdate:updatePercentage});
+    // var tl4= new TimelineMax({onUpdate:updatePercentage});
+    
+    const controller= new ScrollMagic.Controller();
+    tl.from(".about__heading",.5,{x:100,opacity:0});
+    tl.from(".line-2",1,{width:0},"=-.-5");
+    tl.from(".aboutme,.col-1,.col-2",.5,{opacity:0});
+    
+    tl2.from(".skills__heading",.5,{x:100,opacity:0});
+    tl2.from(".line-3",1,{width:0},"=-.-5");
+    tl2.from(".programming_container,.tools_container",.5,{opacity:0});
 
+
+    tl3.from(".recent_work_heading",.5,{x:100,opacity:0});
+    tl3.from(".line-4",1,{width:0},"=-.-5");
+    tl3.from(".recent_heading",.5,{opacity:0});
+    tl3.from(".recent_work_container",.5,{y:50,opacity:0});
+
+
+
+
+    // tl4.from(".contact_heading",.5,{x:100,opacity:0});
+    // tl4.from(".line-5",1,{width:0},"=-.-5");
+    // tl4.from(".Catchme",.5,{opacity:0});
+    // tl4.from(".all_icon_container",.5,{y:100,opacity:0});
+
+    // tl.from(".col-1",.2,{x:100,opacity:0});
+    // tl.from(".col-2",.2,{x:100,opacity:0});
+    
+    // tl2.from(".aboutme",1,{opacity:0,scale:0});
+
+    const scene=new ScrollMagic.Scene({
+        triggerElement: ".about-section",
+        triggerHook:"onLeave",
+        duration:"100%"
+    })
+    .setPin(".about-section")
+    .setTween(tl)
+        .addTo(controller);
+
+    const scene2=new ScrollMagic.Scene({
+        triggerElement: ".skills_wrapper_container",
+        triggerHook:"onLeave",
+        duration:"100%"
+    })
+    .setPin(".skills_wrapper_container")
+    .setTween(tl2)
+        .addTo(controller);
+
+    
+    const scene3=new ScrollMagic.Scene({
+        triggerElement: ".recent_works_wrapper",
+        triggerHook:"onLeave",
+        duration:"100%"
+    })
+    .setPin(".recent_works_wrapper")
+    .setTween(tl3)
+        .addTo(controller);
+
+    
+    // const scene4=new ScrollMagic.Scene({
+    //     triggerElement: ".footer_wrapper",
+    //     triggerHook:"onLeave",
+    //     duration:"100%"
+    // })
+    // .setPin(".footer_wrapper")
+    // .setTween(tl4)
+    //     .addTo(controller);
+
+// const scene2=new ScrollMagic.Scene({
+//         triggerElement: ".aboutme"
+//     })
+    
+//     .setTween(tl2)
+//         .addTo(controller);
+
+
+function updatePercentage(){
+    tl.progress();
+    tl2.progress();
+    tl3.progress();
+    // tl4.progress();
+    console.log(tl.progress());
+}
+
+</script>
 
 
     <script>
@@ -278,6 +370,8 @@
             midClick:true
         })
     </script>
+
+   
 
 
 
