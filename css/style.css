@@ -379,6 +379,9 @@ Recent Work */
 .composition__image--p1{
 width: 100%;
 }
+.composition__image--smalldevice{
+    display: none;
+}
 
 .col-1__list-social-media{
     text-align: center;
@@ -632,28 +635,30 @@ iframe{
  .btn_header{
     justify-content: space-evenly;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 50%; */
     margin-bottom: -12%;
     flex-wrap: wrap;
-    
-    margin: 5% auto;
+    margin: 5% 15% 5% 0%;
      
      
      
  }
 
  .watchCV {
-    
-
      text-decoration: none;
      font-style: none;
      color: white;
      font-weight: 100;
      font-size: 1.2rem;
      border: 2px solid white;
-     padding: 15px 20px;
-     margin-right: 40px;
-     
+     padding: 15px 12px;
+     margin-left: 40%;
+     margin-bottom: 5%;
+     transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
 }
 
  .downloadresume{
@@ -664,7 +669,13 @@ iframe{
     font-weight: 100;
     font-size: 1.2rem;
     border: 2px solid white;
-    padding: 15px 20px;
+    padding: 10px 10px;
+    margin-left: 40%;
+     transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
 
 }
 
@@ -776,6 +787,8 @@ Skill section */
 .skill_containerfluid{
     margin-top: 5%;
     max-width: 90%;
+    margin-bottom: 5%;
+  
 
 }
 
@@ -858,6 +871,7 @@ Recent Work */
 .column1{
 /* background-color: darkgrey; */
 margin-top: -10%;
+margin-left: -15%;
 }
 .column2{
     /* top: 40%; */
@@ -869,10 +883,14 @@ margin-top: -10%;
 
 
 .composition__image--p1{
-   
-width: 70%;
-
-}
+   display: none;
+  
+    }
+    .composition__image--smalldevice{
+        display: block;
+        width: 70%;
+        margin-left: 12%;
+    }
 
 .col-1__list-social-media{
     text-align: center;
@@ -953,7 +971,7 @@ Footer */
     display: flex;
    
     width: 15%;
-    margin: 0 25%;
+    margin: 0 20%;
 
     
 }
