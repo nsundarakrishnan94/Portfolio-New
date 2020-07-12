@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
    
@@ -32,18 +37,21 @@
             
             <!-- <img src="img/me2.JPG" class="hero-image" alt="myimage"> -->
 
+           
+        
 
+        </div>
+
+
+        
+        <div class="btn_contaier">
             <div class="btn_header">
-                <a href="#videostory" class="watchCV" id="videolink"> 
-                    <i class="fa fa-play-circle" aria-hidden="true">&nbsp;</i> Watch CV </a>
-           
-                
-                <a href="img/Resume.pdf" download class="downloadresume"><i class="fa fa-download">&nbsp; &nbsp;</i>Download Resume</a>
+                    
+                <a href="#videostory"  class="watchCV" id="videolink"><i class="fa fa-play-circle" aria-hidden="true">&nbsp; &nbsp;</i>Watch CV</a>
+                 <a href="img/Resume.pdf" download class="downloadresume"><i class="fa fa-download">&nbsp; &nbsp;</i>Download Resume</a>
+                </div>         
+    
             </div>
-            
-
-           
-
 
 
             <div id="videostory" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
@@ -53,9 +61,9 @@
             
             </div>
 
-        </div>
+
      
-        <span class="fa fa-long-arrow-down pulse-down"></span>
+        <!-- <span class="fa fa-long-arrow-down pulse-down"></span> -->
 
 
     </header>
@@ -95,137 +103,172 @@
 
 
 
+    <!-- ----------------------------- Skills----------------------------- -->
+
     <section class="skills_wrapper_container">
         <h2 class="skills__heading">SKILLS</h2>
         <div class="line-3"></div>
-        <div class="skills_container">
+        
            
-           
-           
-            <div class="programming_container">
-                <h4 class="programming_heading-1">PROGRAMMING</h4>
 
-                <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
-                    <div class="skillbar clearfix " data-percent="80%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>HTML5</span></div>
-                      <div class="skillbar-bar skillbar-bar-1" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">80%</div>
-                    </div> <!-- End Skill Bar -->
+
+            <div class="container-fluid skill_containerfluid">
             
-                    <div class="skillbar clearfix " data-percent="70%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>CSS3</span></div>
-                      <div class="skillbar-bar skillbar-bar-2" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">70%</div>
-                    </div> <!-- End Skill Bar -->
-            
-                    <div class="skillbar clearfix " data-percent="60%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>JS</span></div>
-                      <div class="skillbar-bar skillbar-bar-3" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">60%</div>
-                    </div> <!-- End Skill Bar -->
-            
-                    <div class="skillbar clearfix " data-percent="50%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>React JS</span></div>
-                      <div class="skillbar-bar skillbar-bar-4" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">50%</div>
-                    </div> <!-- End Skill Bar -->
-            
-                    <div class="skillbar clearfix " data-percent="60%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>jQuery</span></div>
-                      <div class="skillbar-bar skillbar-bar-5" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">60%</div>
-                    </div> <!-- End Skill Bar -->
-            
-                    <div class="skillbar clearfix " data-percent="70%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>Bootstrap</span></div>
-                      <div class="skillbar-bar skillbar-bar-6" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">70%</div>
-                    </div> <!-- End Skill Bar -->
+                <div class="row ">
+                  <div class="col-sm-6 column3">
+
+                    <h4 class="programming_heading-1">PROGRAMMING</h4>
+
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">HTML5<i class="val">80%</i></span>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">CSS3<i class="val">70%</i></span>
+                        </div>
+                    </div>
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">JavaScript<i class="val">60%</i></span>
+                        </div>
+                    </div>
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">React JS<i class="val">60%</i></span>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">JQuery<i class="val">60%</i></span>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Bootstrap<i class="val">70%</i></span>
+                        </div>
+                    </div>
+
                   </div>
+
+
+
+                  <div class="col-sm-6 column4"> 
+                    <h4 class="programming_heading-1">TOOLS</h4>
+
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Photoshop<i class="val">70%</i></span>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Adobe XD<i class="val">80%</i></span>
+                        </div>
+                    </div>
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Sketch<i class="val">70%</i></span>
+                        </div>
+                    </div>
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Illustrator<i class="val">60%</i></span>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Lightroom<i class="val">80%</i></span>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">FCPX<i class="val">70%</i></span>
+                        </div>
+                    </div>
+                </div>
+                  
                 </div>
               
-            
-
-
-
-            <div class="tools_container">
-
-
-                <h4 class="programming_heading-1">TOOLS</h4>
-
-                <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
-                    <div class="skillbar clearfix " data-percent="70%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>Photoshop</span></div>
-                      <div class="skillbar-bar skillbar-bar-7" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">70%</div>
-                    </div> <!-- End Skill Bar -->
-            
-                    <div class="skillbar clearfix " data-percent="80%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>Adobe XD</span></div>
-                      <div class="skillbar-bar skillbar-bar-8" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">80%</div>
-                    </div> <!-- End Skill Bar -->
-            
-                    <div class="skillbar clearfix " data-percent="80%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>FCPX</span></div>
-                      <div class="skillbar-bar skillbar-bar-9" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">80%</div>
-                    </div> <!-- End Skill Bar -->
-            
-                    <div class="skillbar clearfix " data-percent="70%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>Sketch</span></div>
-                      <div class="skillbar-bar skillbar-bar-10" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">70%</div>
-                    </div> <!-- End Skill Bar -->
-            
-                    <div class="skillbar clearfix " data-percent="60%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>Illustrator</span></div>
-                      <div class="skillbar-bar skillbar-bar-11" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">60%</div>
-                    </div> <!-- End Skill Bar -->
-            
-                    <div class="skillbar clearfix " data-percent="80%">
-                      <div class="skillbar-title" style="background: #FFC400;"><span>Lightroom</span></div>
-                      <div class="skillbar-bar skillbar-bar-12" style="background: #FFC400;"></div>
-                      <div class="skill-bar-percent">80%</div>
-                    </div> <!-- End Skill Bar -->
-                  </div>
-                </div>
-              </div>
               <!-- end section -->
 
     </section>
 
 
 
-                                            <!-- recent works -->
 
-<section class="recent_works_wrapper">
-    <h2 class="recent_work_heading">RECENT WORKS</h2>
-    <div class="line-4"></div>
-    <h4 class="recent_heading">Check out other recent works here</h4>
-    <div class="recent_work_container">
-       
-        <div class="col-1_recent_works">
-            <!-- <h2 class="recent_heading">Hey!</h2> -->
+
+
+
+
+
+
+
+
+    <!-- -----------------------------    Recent Works----------------------------- -->
+
+
+    <section class="recent-section">
+
+
+        <h2 class="recentworks__heading">RECENT WORKS</h2>
+        <div class="line-4"></div>
+
+        <h4 class="recent_para">Check out my other recent works here</h4>
+
+
+
+
+        <div class="container-fluid recentworks_container">
             
-            
-            <div class="col-1__list-social-media">
-                <div class="icon_container"><a href="https://github.com/nsundarakrishnan94" class="git_hyper" target="_blank" ><i class="fa fa-3x fa-github" aria-hidden="true"></i></a></div>
-                <div class="icon_container"><a href="https://www.behance.net/nsundarakrcd23"class="behance_hyper" target="_blank" ><i class="fa fa-3x fa-behance" aria-hidden="true"></i></a></div>
-                <div class="icon_container"><a href="https://www.instagram.com/sundara_krishnan/" class="instagram_hyper" target="_blank" ><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a></div>
+            <div class="row">
+              <div class="col-sm-6 column1">
+                <div class="col-1__list-social-media">
+                    <div class="icon_container"><a href="https://github.com/nsundarakrishnan94" class="git_hyper" target="_blank" ><i class="fa fa-3x fa-github" aria-hidden="true"></i></a></div>
+                    <div class="icon_container"><a href="https://www.behance.net/nsundarakrcd23"class="behance_hyper" target="_blank" ><i class="fa fa-3x fa-behance" aria-hidden="true"></i></a></div>
+                    <div class="icon_container"><a href="https://www.instagram.com/sundara_krishnan/" class="instagram_hyper" target="_blank" ><i class="fa fa-3x fa-instagram fa-insta" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 column2"> 
+                  <img src="img/mywork.svg" alt="image1" class="composition__image composition__image--p1">
             </div>
-        </div>
+              
+            </div>
+          </div>
 
-        <div class="col-2_recent_works-picture-container">
-            <img src="img/mywork.svg" alt="image1" class="composition__image composition__image--p1">
-            
-        </div>
-        
-    </div>
-</section>
+    </section>
 
 
+
+
+<!-- -------------------------------------__________Footer----------------------------------------------- -->
 
 
 
@@ -234,7 +277,7 @@
         <div class="line-5"></div>
         <h3 class="Catchme">CATCH ME BELOW</h3>
     <div class="all_icon_container">
-        <div class="icon_container-contact"><a href="https://www.instagram.com/sundara_krishnan/" class="instagram_hyper" target="_blank" ><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a></div>
+        <div class="icon_container-contact"><a href="https://www.instagram.com/sundara_krishnan/" class="instagram_hyper" target="_blank" ><i class="fa fa-3x fa-instagram " aria-hidden="true"></i></a></div>
         <div class="icon_container-contact"><a href="mailto:nsundarakrishnan@gmail.com" class="email_hyper" target="_blank" ><i class="fa fa-3x fa-at" aria-hidden="true"></i></a></div>
         <div class="icon_container-contact"><a href="tel:7010433256" class="mobile_hyper" target="_blank" ><i class="fa fa-3x fa-mobile" aria-hidden="true"></i></a></div>
         <div class="icon_container-contact"><a href=" https://www.linkedin.com/in/sundara-krishnan-narasimhan-8025708a/" class="linkedin_hyper" target="_blank" ><i class="fa fa-3x  fa-linkedin" aria-hidden="true"></i></a></div>
@@ -254,8 +297,9 @@
 
 
 
-
-
+<!-- 
+    ------------------------------------------JAVA-SCRIPT-------------------------------------------------------------
+ -->
 
 
 
@@ -269,7 +313,7 @@
 
     <script>
         gsap.from('header', {opacity:0, duration:1, y:-50, ease: 'Power2.easeInOut'})
-                
+             
     </script>
 
 <script>
@@ -279,27 +323,29 @@
     // var tl4= new TimelineMax({onUpdate:updatePercentage});
     
     const controller= new ScrollMagic.Controller();
-    tl.from(".about__heading",.5,{x:100,opacity:0});
+    tl.from(".about__heading",.5,{x:-100,opacity:0});
     tl.from(".line-2",1,{width:0},"=-.-5");
     tl.from(".aboutme,.col-1,.col-2",.5,{opacity:0});
     
-    tl2.from(".skills__heading",.5,{x:100,opacity:0});
+    
+    tl2.from(".skills__heading",.5,{x:-100,opacity:0});
     tl2.from(".line-3",1,{width:0},"=-.-5");
-    tl2.from(".programming_container,.tools_container",.5,{opacity:0});
+    tl2.from(".skill_containerfluid",.5,{opacity:0});
 
+    
 
-    tl3.from(".recent_work_heading",.5,{x:100,opacity:0});
+    tl3.from(".recentworks__heading",.5,{x:-100,opacity:0});
     tl3.from(".line-4",1,{width:0},"=-.-5");
-    tl3.from(".recent_heading",.5,{opacity:0});
-    tl3.from(".recent_work_container",.5,{y:50,opacity:0});
+    tl3.from(".recent_para",.5,{opacity:0});
+    tl3.from(".recentworks_container",.5,{y:50,opacity:0});
 
 
 
 
-    // tl4.from(".contact_heading",.5,{x:100,opacity:0});
-    // tl4.from(".line-5",1,{width:0},"=-.-5");
-    // tl4.from(".Catchme",.5,{opacity:0});
-    // tl4.from(".all_icon_container",.5,{y:100,opacity:0});
+    //  tl4.from(".contact_heading",.5,{opacity:0});
+    //  tl4.from(".line-5",1,{width:0},"=-.-5");
+    //  tl4.from(".Catchme",.5,{opacity:0});
+    //  tl4.from(".all_icon_container",.5,{opacity:0});
 
     // tl.from(".col-1",.2,{x:100,opacity:0});
     // tl.from(".col-2",.2,{x:100,opacity:0});
@@ -326,11 +372,11 @@
 
     
     const scene3=new ScrollMagic.Scene({
-        triggerElement: ".recent_works_wrapper",
+        triggerElement: ".recent-section",
         triggerHook:"onLeave",
         duration:"100%"
     })
-    .setPin(".recent_works_wrapper")
+    .setPin(".recent-section")
     .setTween(tl3)
         .addTo(controller);
 
@@ -372,7 +418,15 @@ function updatePercentage(){
     </script>
 
    
-
+<script>
+     $(document).scroll(function() {
+      $('.progress .progress-bar').css("width",
+                function() {
+                    return $(this).attr("aria-valuenow") + "%";
+                }
+        )
+    });
+</script>
 
 
 
